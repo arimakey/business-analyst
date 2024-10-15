@@ -40,3 +40,125 @@
 .read-the-docs {
   color: #888;
 }
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos de la cuadrícula */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+/* Estilos de las tarjetas */
+.news-card {
+  background-color: #ffffffce;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la imagen */
+.news-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.news-image:hover{
+  filter: brightness(70%);
+}
+
+
+.news-title {
+  font-size: 1.2em;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #1c89a7;
+  text-decoration: none;
+  text-align: start;
+}
+
+.news-title:hover {
+  color: #0e4ebdf9;
+}
+
+
+.news-description {
+  font-size: 0.8em;
+  color: #333;
+  text-align: start;
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.news-source {
+  font-size: 0.8em;
+  text-align: start;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-input {
+  width: 50%;
+  padding: 12px;
+  margin: 30px;
+  border: 1.5px solid #1885a3;
+  border-radius: 15px;
+  position: relative;
+}
+
+.search-container{
+  display: flex; /* Usar flexbox para alinear el input y el ícono */
+  justify-content: center;
+  align-items: center; /* Centrar verticalmente el contenido */
+  position: relative; /* Posicionar el ícono relativo al contenedor */
+  margin: 20px;
+} 
+
+.search-icon{
+  left: 10px;
+  color: #333;
+  pointer-events: none; 
+}
+
+.load-more-button {
+  margin: 30px auto;
+  padding: 15px 24px;
+  background-color: #1885a3;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.load-more-button:hover {
+  background-color: #0e4ebdf9; /* Cambiar el color al pasar el mouse */
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
