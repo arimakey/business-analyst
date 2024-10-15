@@ -6,11 +6,11 @@ import 'font-awesome/css/font-awesome.min.css';
 function News() {
   const [news, setNews] = useState([]);
   const [error, setError] = useState(null);
-  const [searchTerm, setSearchTerm] = useState(''); //para guardar lo que se va a buscar
+  const [searchTerm, setSearchTerm] = useState(''); //Guarda la busqueda
   const [visibleCount, setVisibleCount] = useState(9); //Mostrar 12 articulos inicialmente
 
   useEffect(() => {
-    const apiKey = '75a1603eecb042598d28343256620698'; // Reemplaza con tu propia API Key de NewsAPI
+    const apiKey = '75a1603eecb042598d28343256620698'; 
     const url = `https://newsapi.org/v2/everything?q=finance&language=es&sortBy=publishedAt&apiKey=${apiKey}`;
 
     axios.get(url)
